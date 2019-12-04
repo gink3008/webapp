@@ -12,9 +12,9 @@ class Search extends Component {
                             id="exampleInputAmount"
                             placeholder="Nhap tu khoa ...." />
                         <span className="input-group-btn">
-                            <button type="button" className="btn btn-primary" type="button">
+                            <button type="button" className="btn btn-primary" >
                                 <span className="fa fa-search mr-5"></span>Tim
-                        </button>
+                            </button>
                         </span>
                     </div>
                 </div>

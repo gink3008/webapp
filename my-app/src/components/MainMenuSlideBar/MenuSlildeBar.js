@@ -4,19 +4,20 @@ import React,{Component} from 'react';
 class MenuSlideBar extends Component {
   render()
   {
-<div class="menu-sidebar d-none d-lg-block">
-                <div class="logo">
-                    <a href="#">
+      return(
+<div className="menu-sidebar d-none d-lg-block">
+                <div className="logo">
+                    <a href="/aaa">
                         <img src="images/icon/logo.png" alt="Cool Admin" />
                     </a>
                 </div>
-                <div class="menu-sidebar__content js-scrollbar1">
-                    <nav class="navbar-sidebar">
-                        <ul class="list-unstyled navbar__list">
-                            <li class="active has-sub">
-                                <a class="js-arrow" href="#">
-                                    <i class="fas fa-tachometer-alt"></i>Dashboard</a>
-                                <ul class="list-unstyled navbar__sub-list js-sub-list">
+                <div className="menu-sidebar__content js-scrollbar1">
+                    <nav className="navbar-sidebar">
+                        <ul className="list-unstyled navbar__list">
+                            <li className="active has-sub">
+                                <a className="js-arrow" href="/aaa">
+                                    <i className="fas fa-tachometer-alt"></i>Dashboard</a>
+                                <ul className="list-unstyled navbar__sub-list js-sub-list">
                                     <li>
                                         <a href="index.html">Dashboard 1</a>
                                     </li>
@@ -33,28 +34,28 @@ class MenuSlideBar extends Component {
                             </li>
                             <li>
                                 <a href="chart.html">
-                                    <i class="fas fa-chart-bar"></i>Charts</a>
+                                    <i className="fas fa-chart-bar"></i>Charts</a>
                             </li>
                             <li>
                                 <a href="table.html">
-                                    <i class="fas fa-table"></i>Tables</a>
+                                    <i className="fas fa-table"></i>Tables</a>
                             </li>
                             <li>
                                 <a href="form.html">
-                                    <i class="far fa-check-square"></i>Forms</a>
+                                    <i className="far fa-check-square"></i>Forms</a>
                             </li>
                             <li>
                                 <a href="calendar.html">
-                                    <i class="fas fa-calendar-alt"></i>Calendar</a>
+                                    <i className="fas fa-calendar-alt"></i>Calendar</a>
                             </li>
                             <li>
                                 <a href="map.html">
-                                    <i class="fas fa-map-marker-alt"></i>Maps</a>
+                                    <i className="fas fa-map-marker-alt"></i>Maps</a>
                             </li>
-                            <li class="has-sub">
-                                <a class="js-arrow" href="#">
-                                    <i class="fas fa-copy"></i>Pages</a>
-                                <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li className="has-sub">
+                                <a className="js-arrow" href="/aaa">
+                                    <i className="fas fa-copy"></i>Pages</a>
+                                <ul className="list-unstyled navbar__sub-list js-sub-list">
                                     <li>
                                         <a href="login.html">Login</a>
                                     </li>
@@ -66,10 +67,10 @@ class MenuSlideBar extends Component {
                                     </li>
                                 </ul>
                             </li>
-                            <li class="has-sub">
-                                <a class="js-arrow" href="#">
-                                    <i class="fas fa-desktop"></i>UI Elements</a>
-                                <ul class="list-unstyled navbar__sub-list js-sub-list">
+                            <li className="has-sub">
+                                <a className="js-arrow" href="/aaa">
+                                    <i className="fas fa-desktop"></i>UI Elements</a>
+                                <ul className="list-unstyled navbar__sub-list js-sub-list">
                                     <li>
                                         <a href="button.html">Button</a>
                                     </li>
@@ -109,10 +110,11 @@ class MenuSlideBar extends Component {
                     </nav>
                 </div>
             </div>
+      )
   };
   
 }
 
-export default System;
+export default MenuSlideBar;
 
 

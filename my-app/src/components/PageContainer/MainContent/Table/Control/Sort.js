@@ -18,14 +18,14 @@ class Sort extends Component {
                         </button>
                         <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
                             <li>
-                                <a role="button" className="sort_selected" >
+                                <a role="button" className="sort_selected" href="">
                                     <span className="fa fa-sort-alpha-asc pr-5">
                                         Ten A-Z
                                 </span>
                                 </a>
                             </li>
                             <li>
-                                <a role="button" >
+                                <a role="button" href="">
                                     <span className="fa fa-sort-alpha-asc pr-5">
                                         Ten Z-A
                                 </span>
@@ -33,12 +33,12 @@ class Sort extends Component {
                             </li>
                             <li role="separator" className="divider"></li>
                             <li>
-                                <a role="button" >
+                                <a role="button" href="">
                                     Trang thai kich hoat
                             </a>
                             </li>
                             <li>
-                                <a role="button" href="#">
+                                <a role="button" href="">
                                     Trang thai an
                             </a>
                             </li>

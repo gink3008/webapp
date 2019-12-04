@@ -20,6 +20,9 @@
 .App-link {
   color: #09d3ac;
 }
+.mt-30{
+  margin-top: 30px;
+}
 
 .mt-15{
   margin-top: 15px;
@@ -29,4 +32,11 @@
 }
 .ml-5{
   margin-left: 5px;
+}
+
+.ml-15{
+  margin-left: 15px;
+}
+.ml-25{
+  margin-left: 25px;
 }

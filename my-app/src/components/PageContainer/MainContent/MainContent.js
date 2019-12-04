@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import Background from './bg-01.jpg'
-import Table from '../../../Table'
+import Table from './Table/Table'
 class MainContent extends Component {
     render() {
         return (
-            <div class="main-content">
+            <div className="main-content">
                 <Table></Table>
             </div>
         );

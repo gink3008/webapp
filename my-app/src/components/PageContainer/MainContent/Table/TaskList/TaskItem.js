@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 
 class TaskItem extends Component {
     constructor(props) {
-        super(props)
+        super(props) // eslint-disable-next-line
+        this.state = {
+            
+        }
     }
     render() {
         return (

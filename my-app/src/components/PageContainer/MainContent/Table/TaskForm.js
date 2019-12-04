@@ -43,7 +43,7 @@ class TaskForm extends Component {
                     </h3>
                 </div>
                 <div className="panel-body">
-                    <form action="" method="POST" role="form">
+                    <form action="" method="POST" >
                         <legend>Add User</legend>
 
                         <div className="form-group">

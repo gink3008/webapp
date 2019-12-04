@@ -1,31 +1,33 @@
 import React, { Component } from 'react';
 import TaskItem from './TaskList/TaskItem';
-import axios from 'axios';
+// import axios from 'axios';
 class TaskList extends Component {
     constructor(props)
     {
         super(props);
         this.state = {
-            boxuser : [],
+            boxuser : {
+                
+            },
         }
     }
     
-    componentDidMount = () => 
-    {
-        axios.get(`http://172.20.10.2:8080/api/users`)
-      .then(res => {
+    // componentDidMount = () => 
+    // {
+    //     axios.get(`http://localhost:8080/api/users`)
+    //   .then(res => {
           
-        const user = res.data;
-        // this.setState {
-        //     username : user.username,
-        //     password : username.password,
-        //     status : true
-        // };
-        this.onSetState(user);
-        console.log(user)
-      })
-      .catch(error => console.log(error));
-    }
+    //     const data = res.data;
+    //     // this.setState {
+    //     //     username : user.username,
+    //     //     password : username.password,
+    //     //     status : true
+    //     // };
+    //     this.onSetState(data);
+    //     console.log(data)
+    //   })
+    //   .catch(error => console.log(error));
+    // }
     
     onSetState = (user) =>
     {
@@ -35,8 +37,18 @@ class TaskList extends Component {
         console.log(this.state.boxuser);
     }
 
+    onHandleChange = (event) => {
+        var target = event.target;
+        var name = target.name;
+        var value = target.type === 'checkbox' ? target.checked : target.value;
+        this.setState = {
+            [name ] : value
+        };
+        console.log(this.state)
+    }
+
     render() {
-        var tasks = this.state.boxuser;
+        var tasks = this.props.tasks;
         console.log(tasks)
         var element = tasks.map((task, index) => {
             return <TaskItem key={index} index = {index} task = {task}/>
@@ -56,10 +68,10 @@ class TaskList extends Component {
                     <tr>
                         <td></td>
                         <td>
-                            <input  
+                            <input
                                 type="text"
                                 className="form-control"
-                                name="filtername"
+                                name="inputname"
                             />
                         </td>
                         <td></td>

@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
-import TaskForm from './components/TaskForm';
-import Control from './components/Control';
-import TaskList from './components/TaskList';
+import TaskForm from './TaskForm';
+import Control from './Control';
+import TaskList from './TaskList';
 
 class System extends Component {
   constructor(props){
@@ -98,7 +98,10 @@ class System extends Component {
                         {/* {List} */}
                         <div className="row mt-15">
                             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <TaskList tasks = {tasks}/>
+                            {/* Phan List chinh cua table */}
+                                <TaskList tasks = {tasks}/> 
+                            {/* End List */}
+
                             </div>
                         </div>
                     </div>

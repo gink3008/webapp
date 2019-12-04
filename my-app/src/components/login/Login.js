@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Background from './bg-01.jpg'
+import Background from '../../bg-01.jpg'
 class Login extends Component {
     ColorBlock = () => {
         let style = {

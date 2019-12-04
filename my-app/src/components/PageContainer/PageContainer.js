@@ -1,17 +1,10 @@
 import React, { Component } from 'react';
-import Background from './bg-01.jpg'
 import HeaderDesktop from './HeaderDesktop/HeaderDesktop'
 import MainContent from './MainContent/MainContent'
-class Login extends Component {
-    ColorBlock = () => {
-        let style = {
-            backgroundImage: `url(${Background})`
-        }
-        return style;
-    };
+class PageContainer extends Component {
     render() {
         return (
-            <div class="page-container">
+            <div className="page-container">
                 {/* HEADER DESKTOP */}
                 <HeaderDesktop/>
                 {/* HEADER DESKTOP */}
@@ -23,4 +16,4 @@ class Login extends Component {
     };
 }
 
-export default Login;
+export default PageContainer;
